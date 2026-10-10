@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אהובה אללין | עובדת סוציאלית קלינית M.A. בטראומה</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Heebo & Assistant -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#F4F7F5',
+                            100: '#E3EBE6',
+                            200: '#C7D7D0',
+                            600: '#52796F',
+                            700: '#3F5E55',
+                            800: '#2F3E46',
+                        },
+                        sand: {
+                            50: '#FBF9F5',
+                            100: '#F4EFE6',
+                            200: '#E8DFD1',
+                        },
+                        terracotta: {
+                            500: '#D97757',
+                            600: '#C25E3B'
+                        }
+                    },
+                    fontFamily: {
+                        heebo: ['Heebo', 'sans-serif'],
+                        assistant: ['Assistant', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Heebo', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #F4F7F5 0%, #E3EBE6 50%, #FBF9F5 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px -10px rgba(82, 121, 111, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-sand-50 text-sage-800 antialiased selection:bg-sage-200 selection:text-sage-800">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-sage-100 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-sage-600 text-white flex items-center justify-center font-bold text-lg shadow-md">
+                    א
+                </div>
+                <div>
+                    <span class="block font-heebo font-bold text-lg text-sage-800 leading-tight">אהובה אללין</span>
+                    <span class="block text-xs text-sage-600 font-medium">עו"ס קלינית M.A. בטראומה</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-sage-700">
+                <a href="#about" class="hover:text-terracotta-600 transition-colors">אודות</a>
+                <a href="#expertise" class="hover:text-terracotta-600 transition-colors">למי הטיפול מתאים</a>
+                <a href="#experience" class="hover:text-terracotta-600 transition-colors">ניסיון והכשרה</a>
+                <a href="#details" class="hover:text-terracotta-600 transition-colors">פרטי הקליניקה</a>
+                <a href="#contact" class="hover:text-terracotta-600 transition-colors">יצירת קשר</a>
+            </nav>
+
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <a href="https://wa.me/972502226355?text=שלום%20אהובה,%20הגעתי%20דרך%20האתר%20ואשמח%20לפרטים%20על%20תיאום%20פגישה" 
+                   target="_blank" 
+                   class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-full text-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center space-x-2 space-x-reverse">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">וואטסאפ מהיר</span>
+                </a>
+                <a href="tel:0502226355" 
+                   class="bg-sage-600 hover:bg-sage-700 text-white px-4 py-2.5 rounded-full text-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center space-x-2 space-x-reverse">
+                    <i class="fa-solid fa-phone text-sm"></i>
+                    <span class="hidden sm:inline">050-2226355</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-gradient py-20 lg:py-28 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#52796F_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            
+            <!-- Badge -->
+            <div class="inline-flex items-center space-x-2 space-x-reverse bg-sage-100 text-sage-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 shadow-sm border border-sage-200">
+                <i class="fa-solid fa-seedling text-sage-600"></i>
+                <span>קליניקה פרטית ביהוד | טיפול קליני ממוקד בטראומה</span>
+            </div>
+
+            <!-- Main Slogan -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-sage-800 tracking-tight leading-tight mb-6">
+                להחזיר את תחושת <span class="text-sage-600 underline decoration-terracotta-500 decoration-wavy decoration-1 underline-offset-8">הביטחון</span> לגוף ולנפש
+            </h1>
+
+            <!-- Welcome Message Box -->
+            <div class="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm border border-sage-200/60 p-6 sm:p-8 rounded-3xl shadow-xl mb-10 text-right">
+                <div class="flex items-start space-x-4 space-x-reverse">
+                    <div class="w-12 h-12 rounded-2xl bg-sage-50 text-sage-600 flex items-center justify-center shrink-0 mt-1 text-2xl shadow-inner">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-sage-800 mb-2">שמחתי לשתף, פתחתי קליניקה פרטית ביהוד</h2>
+                        <p class="text-lg text-sage-700 leading-relaxed">
+                            אני מלווה נשים וגברים במצבי טראומה, משבר אישי ועיבוד רגשי בסביבה עוטפת, בטוחה ומקצועית.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/972502226355?text=שלום%20אהובה,%20אשמח%20לשוחח%20ולתאם%20פגישה" 
+                   target="_blank"
+                   class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center space-x-3 space-x-reverse">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>לתיאום פגישה בוואטסאפ</span>
+                </a>
+                <a href="mailto:ahuvamulo9@gmail.com" 
+                   class="w-full sm:w-auto bg-terracotta-600 hover:bg-terracotta-500 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center space-x-3 space-x-reverse">
+                    <i class="fa-solid fa-envelope text-xl"><span>שלח מייל לאהובה</span></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-block bg-sage-100 text-sage-700 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        אודות המטפלת
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-sage-800">
+                        אהובה אללין
+                    </h2>
+                    <p class="text-lg font-semibold text-sage-600">
+                        עובדת סוציאלית קלינית M.A. בהתמחות בטראומה קלינית
+                    </p>
+                    <p class="text-sage-700 leading-relaxed text-base">
+                        אני מאמינה שלכל אדם ישנה יכולת פנימית לצמיחה והחלמה, גם לאחר חוויות קשות ומורכבות. העבודה הטיפולית שלי משלבת מקצועיות בלתי מתפשרת יחד עם רגישות עמוקה, אמפתיה ויצירת מרחב מוגן ובטוח שמאפשר עיבוד רגשי אמיתי ושחרור מתקיעות.
+                    </p>
+                    <div class="pt-4 border-t border-sage-100 flex items-center space-x-6 space-x-reverse">
+                        <div>
+                            <span class="block text-2xl font-bold text-sage-800 font-heebo">M.A.</span>
+                            <span class="text-xs text-sage-600 font-medium">מומחית בטראומה קלינית</span>
+                        </div>
+                        <div class="w-px h-10 bg-sage-200"></div>
+                        <div>
+                            <span class="block text-2xl font-bold text-sage-800 font-heebo">יהוד</span>
+                            <span class="text-xs text-sage-600 font-medium">קליניקה פרטית / אונליין</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-sage-50 border border-sage-200/80 p-8 sm:p-10 rounded-3xl relative shadow-lg">
+                        <div class="absolute -top-4 -right-4 w-12 h-12 bg-sage-600 text-white rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-sage-800 mb-4">הגישה הטיפולית שלי</h3>
+                        <p class="text-sage-700 leading-relaxed mb-6">
+                            טראומה ומשברים חיצוניים משפיעים לא רק על המחשבה, אלא נרשמים בגוף ובנפש. בטיפול אנחנו עובדים בקצב שלך, תוך בניית חוסן, זיהוי משאבים פנימיים והחזרת תחושת השליטה והביטחון לחיים.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-2xl shadow-sm border border-sage-100 flex items-center space-x-3 space-x-reverse">
+                                <i class="fa-solid fa-shield-heart text-sage-600 text-xl"></i>
+                                <span class="font-bold text-sm text-sage-800">מרחב בטוח ומוגן</span>
+                            </div>
+                            <div class="bg-white p-4 rounded-2xl shadow-sm border border-sage-100 flex items-center space-x-3 space-x-reverse">
+                                <i class="fa-solid fa-hands-holding-child text-sage-600 text-xl"></i>
+                                <span class="font-bold text-sm text-sage-800">ליווי אישי רגיש</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="py-20 bg-sand-100/70 border-y border-sage-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-sage-200 text-sage-800 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    תחומי התמחות
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-sage-800 mt-4 mb-4">
+                    למי הטיפול מתאים?
+                </h2>
+                <p class="text-lg text-sage-700">
+                    הטיפול מיועד לנשים וגברים החווים או עברו קושי באחד או יותר מהתחומים הבאים:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md card-hover border border-sage-100 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-sage-50 text-sage-600 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-sage-800 mb-3">משבר או תקופה קשה</h3>
+                        <p class="text-sage-600 text-sm leading-relaxed">
+                            התמודדות עם שינויים פתאומיים בחיים, תחושת אובדן שליטה, עומס רגשי או מעברים מאתגרים הדורשים תמיכה מקצועית.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-sage-50 text-xs font-semibold text-terracotta-600 flex items-center space-x-1 space-x-reverse">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>יש מענה רגשי מותאם אישית</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md card-hover border border-sage-100 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-sage-50 text-sage-600 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-heart-crack"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-sage-800 mb-3">פרידה או גירושין</h3>
+                        <p class="text-sage-600 text-sm leading-relaxed">
+                            ליווי בתהליכי פפרדות כואבים, עיבוד פרידה, התמודדות עם בדידות ובניית פרק חדש ומיטיב בחיים.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-sage-50 text-xs font-semibold text-terracotta-600 flex items-center space-x-1 space-x-reverse">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>יש מענה רגשי מותאם אישית</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md card-hover border border-sage-100 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-sage-50 text-sage-600 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-people-arrows"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-sage-800 mb-3">משבר בזוגיות</h3>
+                        <p class="text-sage-600 text-sm leading-relaxed">
+                            התמודדות עם קונפליקטים מתמשכים, שחיקה בקשר, משברי אמון או קושי בתקשורת בינאישית.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-sage-50 text-xs font-semibold text-terracotta-600 flex items-center space-x-1 space-x-reverse">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>יש מענה רגשי מותאם אישית</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md card-hover border border-sage-100 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-sage-50 text-sage-600 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-sage-800 mb-3">טראומה או חוויה קשה שלא מרפה</h3>
+                        <p class="text-sage-600 text-sm leading-relaxed">
+                            כולל חוויות טראומטיות, תסמינים פוסט-טראומטיים, וכן ליווי מיוחד לחיילים ואנשי מילואים לאחר מלחמה ולחימה.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-sage-50 text-xs font-semibold text-terracotta-600 flex items-center space-x-1 space-x-reverse">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>מומחית בטראומה קלינית M.A.</span>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md card-hover border border-sage-100 flex flex-col justify-between md:col-span-2 lg:col-span-2">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-sage-50 text-sage-600 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-sage-800 mb-3">חרדה או תחושת תקיעות אחרי אירוע</h3>
+                        <p class="text-sage-600 text-sm leading-relaxed">
+                            תחושות פחד, דריכות יתר, חרדות המקשות על התפקוד היומיומי, או תחושת "תקיעות" במקום אחד לאחר אירוע מטלטל.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-sage-50 text-xs font-semibold text-terracotta-600 flex items-center space-x-1 space-x-reverse">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>כלים ממוקדים לשחרור והרגעה</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- New Experience & Training Section -->
+    <section id="experience" class="py-20 bg-white border-b border-sage-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-sage-100 text-sage-800 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    רקע מקצועי והשכלה
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-sage-800 mt-4 mb-4">
+                    ניסיון והכשרה
+                </h2>
+                <p class="text-lg text-sage-700">
+                    היכרות עם הרקע המקצועי, הניסיון הקליני וההכשרה האקדמית של אהובה אללין
+                </p>
+            </div>
+
+            <div class="bg-sage-50 border border-sage-200/80 rounded-3xl p-8 sm:p-10 shadow-lg space-y-8">
+                
+                <!-- Intro / Summary -->
+                <div class="border-b border-sage-200/60 pb-6">
+                    <h3 class="text-2xl font-bold text-sage-800 mb-2">אהובה אללין | עובדת סוציאלית קלינית M.A. בטראומה קלינית</h3>
+                    <p class="text-sage-700 leading-relaxed text-base">
+                        <strong>בכמה מילים:</strong> בעלת ניסיון בטיפול באנשים שחוו משבר או קושי סביב טראומה. מטפלת בנשים וגברים מגיל 18, בטיפול רגשי פרטני.
+                    </p>
+                </div>
+
+                <!-- Grid Details -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Professional Experience & Expertise -->
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-bold text-sage-800 mb-3 flex items-center space-x-2 space-x-reverse">
+                                <i class="fa-solid fa-briefcase text-sage-600"></i>
+                                <span>ניסיון מקצועי</span>
+                            </h4>
+                            <div class="bg-white p-4 rounded-2xl border border-sage-100 shadow-sm space-y-2 text-sm text-sage-700">
+                                <span class="font-bold text-sage-800 block">מ-2020 ועד היום:</span>
+                                <p>מטפלת במבוגרים במרכז לטיפול ביחסים בטוחים במשפחה. טיפול פרטני בנשים ובגברים, והנחיית קבוצות תמיכה לנשים ולאימהות.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-bold text-sage-800 mb-3 flex items-center space-x-2 space-x-reverse">
+                                <i class="fa-solid fa-star text-sage-600"></i>
+                                <span>תחומי התמחות</span>
+                            </h4>
+                            <ul class="space-y-2 text-sage-700 text-sm">
+                                <li class="flex items-center space-x-2 space-x-reverse">
+                                    <i class="fa-solid fa-check text-terracotta-600"></i>
+                                    <span>משבר וטראומה</span>
+                                </li>
+                                <li class="flex items-center space-x-2 space-x-reverse">
+                                    <i class="fa-solid fa-check text-terracotta-600"></i>
+                                    <span>משבר בזוגיות</span>
+                                </li>
+                                <li class="flex items-center space-x-2 space-x-reverse">
+                                    <i class="fa-solid fa-check text-terracotta-600"></i>
+                                    <span>פרידה וגירושין</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Education & Courses -->
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-bold text-sage-800 mb-3 flex items-center space-x-2 space-x-reverse">
+                                <i class="fa-solid fa-graduation-cap text-sage-600"></i>
+                                <span>השכלה אקדמית</span>
+                            </h4>
+                            <ul class="space-y-3 text-sm">
+                                <li class="bg-white p-3.5 rounded-xl border border-sage-100 shadow-sm">
+                                    <span class="font-bold block text-sage-800">תואר שני (M.A.) בטראומה קלינית</span>
+                                    <span class="text-xs text-sage-600">אוניברסיטת חיפה (2023-2025)</span>
+                                </li>
+                                <li class="bg-white p-3.5 rounded-xl border border-sage-100 shadow-sm">
+                                    <span class="font-bold block text-sage-800">תואר ראשון (B.A.) בעבודה סוציאלית</span>
+                                    <span class="text-xs text-sage-600">אוניברסיטת אריאל (2017-2020)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Courses & Languages (Bottom block) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 border-t border-sage-200/60">
+                    <div>
+                        <h4 class="text-lg font-bold text-sage-800 mb-3 flex items-center space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-award text-sage-600"></i>
+                            <span>קורסים והשתלמויות</span>
+                        </h4>
+                        <ul class="space-y-3 text-xs sm:text-sm text-sage-700">
+                            <li class="bg-white p-3 rounded-xl border border-sage-100 shadow-sm">
+                                <span class="font-bold text-sage-800 block">2021-2022</span>
+                                התערבות במשבר באלימות במשפחה, בית הספר לעבודה סוציאלית, דימול.
+                            </li>
+                            <li class="bg-white p-3 rounded-xl border border-sage-100 shadow-sm">
+                                <span class="font-bold text-sage-800 block">2025-2026</span>
+                                קורס מיומנויות טיפול מתקדמות בטראומה ואלימות במשפחה, בית הספר המרכזי להכשרת עובדים לשירותי הרווחה.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-bold text-sage-800 mb-3 flex items-center space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-language text-sage-600"></i>
+                            <span>שפות</span>
+                        </h4>
+                        <div class="bg-white p-4 rounded-xl border border-sage-100 shadow-sm text-sage-700 text-sm">
+                            עברית, אנגלית, אמהרית
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-sage-800 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-96 h-96 bg-sage-700/50 rounded-full filter blur-3xl pointer-events-none -translate-x-1/2 -translate-y-1/2"></div>
+                
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="bg-sage-700 text-sage-200 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            פרטים מעשיים
+                        </span>
+                        <h2 class="text-3xl font-bold mt-4 mb-6">טיפול רגשי מותאם אישית</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-center space-x-3 space-x-reverse">
+                                <div class="w-8 h-8 rounded-full bg-sage-700 text-terracotta-500 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <span class="text-lg font-medium">טיפול רגשי בקליניקה ביהוד או אונליין</span>
+                            </li>
+                            <li class="flex items-center space-x-3 space-x-reverse">
+                                <div class="w-8 h-8 rounded-full bg-sage-700 text-terracotta-500 flex items-center justify-center shrink-0">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <span class="text-lg font-medium">אורך הפגישה: 50 דקות</span>
+                            </li>
+                            <li class="flex items-center space-x-3 space-x-reverse">
+                                <div class="w-8 h-8 rounded-full bg-sage-700 text-terracotta-500 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <span class="text-lg font-medium">דיסקרטיות מלאה וסביבה תומכת</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-sage-700/60 backdrop-blur-md p-8 rounded-2xl border border-sage-600 text-center">
+                        <h3 class="text-2xl font-bold mb-3">מוכנים לעשות צעד ראשון?</h3>
+                        <p class="text-sage-200 text-sm mb-6">
+                            אני מזמינה אתכם ליצור קשר להתייעצות ראשונית ולתיאום פגישה באווירה חמה ובטוחה.
+                        </p>
+                        <a href="https://wa.me/972502226355?text=שלום%20אהובה,%20אשמח%20לפרטים%20נוספים" 
+                           target="_blank"
+                           class="inline-flex items-center justify-center space-x-2 space-x-reverse w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-md transition-all">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>שליחת הודעת וואטסאפ לאהובה</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-sage-50 border-t border-sage-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="w-16 h-16 bg-sage-600 text-white rounded-3xl mx-auto flex items-center justify-center text-3xl mb-6 shadow-md">
+                <i class="fa-solid fa-phone-flip"></i>
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-bold text-sage-800 mb-4">
+                צרו קשר לקביעת פגישה
+            </h2>
+            <p class="text-lg text-sage-700 max-w-xl mx-auto mb-8">
+                אפשר להתקשר, לשלוח הודעת וואטסאפ או לפנות במייל. אני כאן כדי להקשיב וללוות אתכם בחזרה לתחושת הביטחון.
+            </p>
+
+            <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-sage-200 space-y-6 max-w-2xl mx-auto">
+                <div class="text-2xl sm:text-3xl font-extrabold text-sage-800 font-heebo">
+                    050-2226355
+                </div>
+                <div class="text-base font-semibold text-sage-600">
+                    <a href="mailto:ahuvamulo9@gmail.com" class="hover:text-terracotta-600 transition-colors underline underline-offset-4">
+                        ahuvamulo9@gmail.com
+                    </a>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-3 pt-4 border-t border-sage-100">
+                    <a href="tel:0502226355" class="bg-sage-600 hover:bg-sage-700 text-white font-bold px-6 py-3 rounded-2xl shadow transition-all flex items-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>התקשר</span>
+                    </a>
+                    <a href="https://wa.me/972502226355?text=שלום%20אהובה,%20אשמח%20לקבוע%20פגישה" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-2xl shadow transition-all flex items-center space-x-2 space-x-reverse">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>וואטסאפ</span>
+                    </a>
+                    <a href="mailto:ahuvamulo9@gmail.com" class="bg-terracotta-600 hover:bg-terracotta-500 text-white font-bold px-6 py-3 rounded-2xl shadow transition-all flex items-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                        <span>אימייל</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sage-800 text-sage-200 py-10 border-t border-sage-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
+            <div>
+                <span class="font-heebo font-bold text-white text-lg block">אהובה אללין | עובדת סוציאלית קלינית M.A.</span>
+                <span class="text-xs text-sage-300">התמחות בטראומה קלינית • קליניקה ביהוד ואונליין • ahuvamulo9@gmail.com</span>
+            </div>
+            <div class="text-xs text-sage-400">
+                © 2026 כל הזכויות שמורות לאהובה אללין.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
